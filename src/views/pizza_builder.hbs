@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Ragazzi Pizza Builder</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <h1>Build a Pizza Your Way!</h1>
+    <form action="/pizza_builder" method="POST">
+    <div class="size">
+        <label for="size">Size
+            <select name="size" id="size">
+                <option name="size" value="Small">Small</option>
+                <option name="size" value="Medium">Medium</option>
+                <option name="size" value="Large">Large</option>
+            </select>
+        </label>
+    </div>
+    <div class="toppings">
+        <label for="num_toppings">How many topping?
+            <input type="text" name="num_toppings" id="num_toppings">
+        </label>
+    </div>
+    <div>
+        <ul>
+            {{#each toppingsArr}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="gluten-free">
+        <label for="gluten_free">
+            <input type="checkbox" name="gluten_free" id="gluten_free"> Gluten-Free Crust? ($2.00 extra)
+        </label>
+    </div>
+    <div class="instructions">
+        <label for="instructions">We'll make it your way, tell us how! (Option)<br />
+            <textarea name="instructions" id="instructions" cols="30" rows="10"></textarea>
+        </label>
+    </div>
+    <input type="submit" value="Calculate Price"> <a href="/">Never Mind</a>
+    </form>
+</body>
+</html>

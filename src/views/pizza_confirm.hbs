@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Ragazzi Pizza Builder - Confirmation</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <h1>Your Marvelous Pizza!</h1>
+    <div>
+        <p>Size: {{size}}</p>
+        <p>Number of toppings: {{numToppings}}</p>
+        <p>Gluten-Free Crust: {{gluten_free}}</p>
+        <p>Special Instructions: {{instructions}}</p>
+        <p>Your Price: ${{totalPrice}}</p>
+        {{#if freeDelivery}}
+        <p>Because your order meets our $15.00 minimun, we'll bring it to you for FREE!</p>
+        {{/if}}
+    </div>
+    <div><a href="/pizza_builder">Build Another Pizza</a> | <a href="/">Back to Homepage</a></div>
+</body>
+</html>

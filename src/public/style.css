@@ -1,0 +1,25 @@
+html, body, h1, h2, h3, h4, h5, p, a, ul, ol, li, form, label, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #222222;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 1em;
+}
+h1 {
+    margin-top: 1em;
+}
+h2 {
+    margin: 1em 0 .5em 0;
+}
+ul {
+    padding-left: 2em;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Ragazzi Pizzeria Reviews</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Like our pizza? (or not) Leave us a review!</h1>
+    <form action="/reviews" method="POST">
+        <div>
+            <label for="name">Your name:<br />
+                <input type="text" name="name" placeholder="Enter your name">
+            </label>
+        </div>
+        <div>
+            <label for="comment" name="comment">Comment:<br />
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </label>
+        </div>
+        <div>
+            <label for="rating">Rating:<br />
+                <input type="radio" name="rating" id="rating" value="5"> 5
+                <input type="radio" name="rating" id="rating" value="4"> 4
+                <input type="radio" name="rating" id="rating" value="3"> 3
+                <input type="radio" name="rating" id="rating" value="2"> 2
+                <input type="radio" name="rating" id="rating" value="1"> 1
+            </label>
+        </div>
+        <input type="submit" value="Submit"> <a href="/">Never Mind</a>
+
+    </form>
+</body>
+</html>
