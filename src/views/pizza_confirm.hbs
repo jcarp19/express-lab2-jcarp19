@@ -16,16 +16,16 @@
             <h1 class="headline">Your Marvelous Pizza!</h1>
         </div>
     </header>
-    <div>
-        <p>Size: {{size}}</p>
-        <p>Number of toppings: {{numToppings}}</p>
-        <p>Gluten-Free Crust: {{gluten_free}}</p>
-        <p>Special Instructions: {{instructions}}</p>
-        <p>Your Price: ${{totalPrice}}</p>
+    <div class="build-confirm">
+        <p><span class="label">Size:</span> {{size}}</p>
+        <p><span class="label">Number of toppings:</span> {{numToppings}}</p>
+        <p><span class="label">Gluten-Free Crust:</span> {{gluten_free}}</p>
+        <p><span class="label">Special Instructions:</span> {{instructions}}</p>
+        <p><span class="label">Your Price:</span> ${{totalPrice}}</p>
         {{#if freeDelivery}}
-        <p>Because your order meets our $15.00 minimun, we'll bring it to you for FREE!</p>
+        <p class="free">Because your order meets our $15.00 minimun, we'll bring it to you for FREE!</p>
         {{/if}}
+        <a href="/pizza_builder">Build Another Pizza</a> | <a href="/">Back to Homepage</a>
     </div>
-    <div><a href="/pizza_builder">Build Another Pizza</a> | <a href="/">Back to Homepage</a></div>
 </body>
 </html>

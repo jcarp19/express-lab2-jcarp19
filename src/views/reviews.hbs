@@ -16,17 +16,17 @@
         </div>
     </header>
     <form action="/reviews" method="POST">
-        <div>
+        <div class="name">
             <label for="name">Your name:<br />
                 <input type="text" name="name" placeholder="Enter your name">
             </label>
         </div>
-        <div>
+        <div class="comment">
             <label for="comment" name="comment">Comment:<br />
                 <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
             </label>
         </div>
-        <div>
+        <div class="rating">
             <label for="rating">Rating:<br />
                 <input type="radio" name="rating" id="rating" value="5"> 5
                 <input type="radio" name="rating" id="rating" value="4"> 4
@@ -35,7 +35,7 @@
                 <input type="radio" name="rating" id="rating" value="1"> 1
             </label>
         </div>
-        <input type="submit" value="Submit"> <a href="/">Never Mind</a>
+        <input type="submit" value="Submit" class="btn-submit"> <a href="/">Never Mind, Take Me Home</a>
 
     </form>
 </body>

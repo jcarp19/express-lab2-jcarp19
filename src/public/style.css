@@ -7,6 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     color: #302C2A;
+    padding-bottom: 6em;
 }
 #wrapper {
     display: flex;
@@ -49,19 +50,43 @@ ul {
     height: 300px;
     background: #3E5236 url(images/chad-montano-MqT0asuoIcU-unsplash.jpeg) center/100% no-repeat;
 }
-.specialty-pizza, .build-pizza, .leave-review, form {
-    margin-left: 2em;
+.specialty-pizza, .build-pizza, .leave-review, form, .review-confirm, .build-confirm {
+    margin-left: 1em;
+    margin-right: 1em
 }
 .leave-review {
     margin-bottom: 6.25em;
 }
-.size, .num-toppings, .toppings-list, .gluten-free, .instructions {
+.size, .num-toppings, .toppings-list, .gluten-free, .instructions, .name, .comment, .rating, .review-confirm, .build-confirm {
     margin-top: 1em;
 }
-label {
+label, .label {
     font-weight: 700;
 }
-input {
-    padding: 1.25em 1em;
+input, select, textarea {
+    padding: .5em;
+}
+#num_toppings {
+    width: 1.5em;
+}
+#instructions, #comment {
+    width: 300px;
+    height: 100px;
+}
+.btn-submit {
+    margin: 2em 0;
+    padding: 1em;
+    color: #ffffff;
+    background-color: #3E5236;
+    border: none;
+    border-radius: 7px;
+    display: block;
+}
+.review-confirm, .build-confirm, .specialty-pizza p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.free {
+    color: #B55232;
 }
 
